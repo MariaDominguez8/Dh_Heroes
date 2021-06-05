@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding: 0;
+   } /*La tecla * significa que se aplican los cambios en forma universal y esto es para eliminar los margenes que se forman por defecto   */
+.logo{ 
+      width: 200px;
+} /* Aca le damos el tamaño que querramos a nuestro logo a traves de la class="logo" */
+.fondo{
+    background-image: url('/img/fondo.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.menu{
+    background-color: black;
+} /* Aca le damos color al header */
+.menu nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+} /* Esto es para acomodar el contenido de nuestro header asi queda como barra lateral */
+.menu nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+} /* Aca le sacamos los puntos a las listas desordenadas del header, acomodamos el contenido para ir dandole forma a la barra lateral */
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(248, 202, 77);
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+} /* Esto le saca a todas las etiquetas a, el subrayado que traen por defecto , con font le damos el tamaño deseado a las letras y por ultimo el color*/
+a:hover{
+    background: rgb(216, 10, 10);
+} /*Para que cada vez que pasemos el mousse cambie de color*/
+.menu nav ul li ul{
+    display: flex;
+    flex-direction: column;
+} /*Aplicamos un flex box y le damos direccion de columna a los submenus para que se vaya acomodando de una manera vertical  */
+.menu nav ul li ul{
+    position: absolute;
+    background: black;
+}
+.menu nav ul li ul li{
+width: 180px;
+position: relative;
+}
+.menu nav ul li ul li ul{
+    top: 0;
+    left: 130px;
+    position: absolute;
+}
+.menu nav ul li ul{
+    display: none;
+}
+.menu nav ul li:hover > ul{
+    display: block;
+}
+.menu nav ul li ul li ul{
+    display: none;
+}
+.menu nav ul li ul li:hover > ul{
+    display:block
+}
+.menu nav ul li ul li ul{
+    display: flex;
+    flex-direction: column;
+}
+.menu nav ul li ul li ul li {
+   width: 180px;
+   position: relative;
+}
+h1{
+   text-align: center; 
+   color: rgb(250, 187, 12);;
+
+} /* Esto es para centrar la ubicacion de los encabezados */
+h2{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(250, 187, 12);
+}
+.not{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(253, 222, 138);
+}
+.personaje{
+    width: 500px;
+    text-align: center;
+}
+h3{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(224, 181, 62);
+}
+.lista{
+    font-size: 30px;
+    color: rgb(250, 201, 65);
+}
+.pie{
+    background-color: black;
+}
+p{
+    font-size: 20px;
+    color: rgb(253, 222, 138);
+}
+.personajes{
+   background-size: cover;
+    height: 100%;
+    text-align: center;
+}
+h5{
+    font-size: 15px;
+    color: rgb(224, 181, 62);
+}
+footer{
+    background-color: black;
+}
+.parr{
+font-size: 35px;
+}
+h4{
+    font-size: 20px;
+    color: rgb(224, 181, 62);
+}
+  
