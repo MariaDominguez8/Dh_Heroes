@@ -7,9 +7,9 @@
 } /* Aca le damos el tamaño que querramos a nuestro logo a traves de la class="logo" */
 .fondo{
     background-image: url('/img/fondo.jpg');
-    width: 100%;
-    height: 100%;
+    width:100% ;
     background-size: cover;
+
 }
 .menu{
     background-color: black;
@@ -82,6 +82,7 @@ h2{
     text-align: center;
     font-size: 50px;
     color: rgb(250, 187, 12);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }
 .not{
     text-align: center;
@@ -108,6 +109,7 @@ h3{
 p{
     font-size: 20px;
     color: rgb(253, 222, 138);
+    font-family: cursive;
 }
 .personajes{
    background-size: cover;
@@ -127,5 +129,24 @@ font-size: 35px;
 h4{
     font-size: 20px;
     color: rgb(224, 181, 62);
+}
+.delimitador{
+    width:560px;    /* Ancho máximo */
+    margin:auto;    /* Centramos el vídeo */
+}
+/* El contenedor con el padding-top crea el tamaño del vídeo */
+.contenedor{
+    height:0px;
+    width:100%;
+    padding-top:56.25%; /* Relación: 16/9 = 56.25% */
+    position:relative;
+}
+/* El iframe se adapta al tamaño del contenedor */
+.contenedor iframe{
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
 }
   
